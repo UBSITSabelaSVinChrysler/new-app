@@ -1,7 +1,17 @@
-<h1>Welcome to the HOME PAGE</h1>
-<p>Course Code: APPDEV1</p>
-<h2> </h2>
-<h3>Angular is a prominent, open-source, TypeScript-based framework and platform developed by Google for building dynamic, scalable single-page client applications for the web, mobile, and desktop. </h3>
+<div class="container mt-5">
+    <div class="card mb-3 text-center">
+      <h3 class="card-header">{{ appTitle }}</h3>
+  
+      <div class="card-body">
+        <img [src]="userImageUrl" alt="User Avatar">
+        
+        <div [class.highlighted]="isHighlighted">
+          Today's Date: {{ currentDate | date:'fullDate' }}
+        </div>
+ 
+      </div>
+  
+   
 
-<p>Units: 3</p>
-<p>Course Status: 64564Active</p>
+    </div>
+</div>
